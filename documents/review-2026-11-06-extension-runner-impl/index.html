@@ -1,0 +1,1000 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A pre-registered study that tests, with rules fixed in advance, whether the positions of the planets say anything about events on Earth. Built so that it can fail.">
+      
+      
+      
+        <link rel="canonical" href="https://sisco128.github.io/cielo-eventi-site/documents/review-2026-11-06-extension-runner-impl/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Review 2026 11 06 extension runner impl - Cielo-Eventi</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#review-2026-11-06-the-d12-implementation-pr-3-before-the-first-dispatch" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cielo-Eventi" class="md-header__button md-logo" aria-label="Cielo-Eventi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cielo-Eventi
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Review 2026 11 06 extension runner impl
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cielo-Eventi" class="md-nav__button md-logo" aria-label="Cielo-Eventi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cielo-Eventi
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../meetings/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetings
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Meetings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../journal/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Journal
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Journal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reports/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reports
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reports
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documents
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Findings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Findings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-declared-departures-workflow-header-lines-6-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The two declared departures (workflow header, lines 6-7)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checked-and-found-in-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checked and found in order
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-i-could-not-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What I could not check
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verdict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verdict
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div class="admonition note">
+<p class="admonition-title">Standing disclaimer</p>
+<p>Results on the practice part of the data are never evidence, either way. The validation test (run once, 1 November 2026) and the prospective test (2027) are the only answers; their outcomes appear on this site, in plain words, only after the council's audit and the PO's release.</p>
+</div>
+<h1 id="review-2026-11-06-the-d12-implementation-pr-3-before-the-first-dispatch">Review 2026-11-06 — the D12 implementation (PR #3) before the first dispatch<a class="headerlink" href="#review-2026-11-06-the-d12-implementation-pr-3-before-the-first-dispatch" title="Permanent link">&para;</a></h1>
+<p><strong>Reviewer:</strong> Critic (night item 16, <code>council/NIGHT-QUEUE.md</code> row 16). <strong>Commit reviewed:</strong> <code>13b9bae</code> (<code>origin/main</code>; PR #3 merged as
+<code>43dbc39</code>, which adds 4 files and modifies none: <code>scripts/extend_s6.py</code>, <code>council/scripts/check_extension.py</code>,
+<code>.github/workflows/s6-extension.yml</code>, <code>council/reviews/evidence/2026-11-06-extend-s6-dryrun.md</code>).
+<strong>Against:</strong> <code>council/rfcs/2026-11-01-monthly-extension-runner.md</code> revision 2, §§ R2.1–R2.13; <code>council/FOR-THE-PO.md</code>, Decided,
+D12 (place = GitHub runner for all three arms; markets: one request a month, any failure ends it, no retry, no change of header,
+address, place or source; USGS: R2.9 as written), D16 (a), D17 (b), D18 (council text, (ii) = alternative 3), D19 (a, short start).</p>
+<p><strong>Method.</strong> Read only. <code>sha256sum</code> on the 7 files the dry-run record lists; <code>git diff analysis-v1 -- scripts/extract_gdelt.py
+scripts/extract_usgs.py scripts/extract_markets.py study/protocol-v0.4.json</code> (the tag was already present locally, no fetch
+needed); <code>git diff --name-status 43dbc39^1 43dbc39</code>; the workflow parsed with ruby's YAML (PyYAML is not installed here). One
+<code>git ls-remote</code> was sent to the repository's own remote, to see whether <code>data/s6-extension</code> exists (it does not); no request to any
+data host. Nothing was run (not the wrapper, not the checker, not the dry run), nothing dispatched, and no file was changed but this one.
+Every number below is a line number, a date, a count of files, or a hash.</p>
+<h2 id="findings">Findings<a class="headerlink" href="#findings" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>severity</th>
+<th>where</th>
+<th>what</th>
+<th>rule</th>
+<th>how to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>major</strong></td>
+<td><code>scripts/extend_s6.py:157, 185</code>; <code>.github/workflows/s6-extension.yml:24-25</code> (matrix <code>gdelt, usgs, markets</code>, <code>max-parallel: 1</code>), <code>:13</code> (<code>minutes</code> default), <code>:21</code> (<code>timeout-minutes</code>)</td>
+<td><code>run_date</code> is taken per wrapper invocation, and the workflow runs the three arms one after the other with GDELT first and a budget of hours. A dispatch late enough in the UTC day that the GDELT job runs past 00:00 UTC gives USGS and markets a run date one day later than GDELT's, so their <code>end</code> is one day later: in that month the arms end on different days, which is the property of D17 alternative (c), not of the (b) the PO chose. No data consequence (each arm's <code>end</code> is in its manifest, check N uses the arm's own <code>end</code>, the next month covers the gap), but an undeclared departure in effect from "for all three arms". R2.1 step 3 ("take <code>run_date</code> once") is per invocation, so the RFC text does not contradict the code; D17 (b) and R2.2 read as one end per month.</td>
+<td>D17 (b); RFC R2.2 ("one common <code>end</code>"), R2.10 D17</td>
+<td>The three <code>MANIFEST-s6.json</code> of a month carry the same <code>run_date_utc</code> and <code>window[1]</code>. For the first dispatch: a dispatch early in the UTC day, so that the GDELT job ends before midnight UTC</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>major</strong></td>
+<td><code>.github/workflows/s6-extension.yml:37-38</code></td>
+<td><code>if git fetch origin data/s6-extension; then … else git checkout -B data/s6-extension origin/main; fi</code> treats a <em>failed</em> fetch as an <em>absent</em> branch. If the fetch fails for any transient reason on a later dispatch, the branch is re-created from <code>origin/main</code> without <code>s6-work/</code>, the wrapper finds no manifest, and a second markets (or USGS) request is sent in the same month; the later push is then rejected (non-fast-forward, conflicting manifest), so the second attempt also leaves no record on the branch. The RFC's draft (R2.11) has the same construct, so this is not a departure; it is the one path by which the PO's "one request a month" does not hold. It cannot bite on the first dispatch (the branch does not exist yet, so creation from <code>origin/main</code> is the right branch of the <code>if</code>).</td>
+<td>D12 (iii); RFC R2.9 ("the wrapper's own record blocks a second markets or USGS attempt … even if the workflow is dispatched again")</td>
+<td>The job log of every dispatch after the first shows the fetch succeeding; the branch never holds two <code>MANIFEST-s6.json</code> for one arm and month. Fix is the Engineer's (distinguish "no such ref" from a failed fetch, and stop on failure)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>minor</td>
+<td><code>council/scripts/check_extension.py:136-139</code>, <code>ALLOWED</code> at <code>:31-41</code></td>
+<td>R2.3's sentence "The check file records whether the two agree" (the cut read from <code>data/events/&lt;arm&gt;/daily.csv</code> versus <code>STATE.json → s6_cursor.last_extension</code>) is not implemented: no key for it, nothing reads <code>program/STATE.json</code>. Consequence: when the researcher's merge of month <em>k</em> lags past month <em>k</em>+1's dispatch, month <em>k</em>+1 opens on the old cut, re-extracts the days month <em>k</em> already extracted (a later vintage), and nothing flags it; under D19 (a) those rows must not replace month <em>k</em>'s, and the checker cannot say so. Undeclared departure.</td>
+<td>RFC R2.3; D19 (a)</td>
+<td><code>grep -n s6_cursor council/scripts/check_extension.py</code> is empty. Until fixed: the researcher confirms month <em>k</em> is merged before dispatching month <em>k</em>+1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>minor</td>
+<td><code>council/scripts/check_extension.py:8, 184-185, 200</code></td>
+<td>The check file lists USGS event ids (<code>ids_only_on_main</code>, <code>ids_only_in_run</code>, <code>ids_already_pinned</code>). R2.5's closed list of what the output holds (dates, equal/different, file counts, exception class and status, sha256, run and session ids, pass/fail) does not include event ids; the checker's own docstring adds "USGS event ids". A list of ids for one date is a lower bound on that day's <code>n</code>, and every compared USGS date (2026-10-01 to the cut) is a prospective day (<code>engine/src/mundane/analyze.ts:40, 75</code>). D18 (ii) asks that the pinned id appended again be "reported", which is one id and its date. Undeclared departure; minor because the ids are public catalogue identifiers and the lists hold only the revised ones.</td>
+<td>RFC R2.5 (contents of the check file; R:16); amendment #24</td>
+<td>Read <code>s6-work/2026-11/CHECK-usgs.json</code> after the run: the three id lists</td>
+</tr>
+<tr>
+<td>5</td>
+<td>minor</td>
+<td><code>council/scripts/check_extension.py:92-100</code></td>
+<td><code>gdelt_cut_compared</code> (D18-i, from month 2) decides that the cut row was "closed from a file-day complete on the clock" when month <em>k</em>−1's <code>started_at</code> is on or after midnight UTC of <code>cut + 2</code>. R2.2 puts completeness after the first quarter-hour of that day, not at midnight; and the relevant instant is when file-day <code>cut + 1</code> was fetched (the end of the earlier run), not when it started. Mostly conservative: a fetch inside that quarter-hour would show as missing files and a <code>different</code> row, which blocks the GDELT merge rather than passing a wrong row. Month 1 is unaffected (no <code>MANIFEST-s6-*.json</code> on <code>main</code>, so the cut row is not compared, as D16 (a) requires).</td>
+<td>RFC R2.2, R2.4; D18-i</td>
+<td>From month 2: compare <code>started_at</code> and the last chunk's <code>ended_at</code> in <code>data/events/gdelt/MANIFEST-s6-&lt;month&gt;.json</code> with the threshold</td>
+</tr>
+<tr>
+<td>6</td>
+<td>minor</td>
+<td><code>scripts/extend_s6.py:153-154, 194-201</code>; <code>council/scripts/check_extension.py:138</code></td>
+<td><code>sha256.checker</code> in <code>MANIFEST-s6.json</code> is taken when the month is opened and reused by later GDELT chunks; the CHECK file copies it. If <code>check_extension.py</code> changes between the first and the last chunk of a GDELT month (RFC-gated, so rare), the record names a checker version other than the one that wrote the CHECK file. The wrapper's and the frozen module's hashes are protected by the <code>RUN.json</code> test at <code>:170</code>; the checker's is not.</td>
+<td>RFC R2.7 ("their sha256 in every manifest shows which version wrote which month")</td>
+<td><code>sha256sum council/scripts/check_extension.py</code> at the commit that wrote <code>CHECK-gdelt.json</code>, against <code>sha256.checker</code> in the manifest</td>
+</tr>
+<tr>
+<td>7</td>
+<td>minor</td>
+<td><code>.github/workflows/s6-extension.yml:30, 33, 41, 45</code></td>
+<td>The <code>arms</code> input is read as <code>== 'all'</code> or <code>== 'gdelt'</code>; for the GDELT job the condition <code>matrix.arm == 'gdelt'</code> is true whatever the input, so any other value (a typo) skips USGS and markets and still runs a GDELT chunk. Same in the RFC draft (not a departure). Harmless to the stop rule (GDELT is resumable; its requests are the frozen code's), but an unrequested chunk.</td>
+<td>RFC R2.11</td>
+<td>Read the four <code>if:</code> lines</td>
+</tr>
+<tr>
+<td>8</td>
+<td>note</td>
+<td><code>.github/workflows/s6-extension.yml:43, 47</code></td>
+<td>The wrapper's exit code never fails the job (<code>continue-on-error: true</code>, as in the RFC draft) and the checker's exit is a <code>::warning::</code> (declared departure 2). A guard refusal, a stop-rule end, a resumable GDELT failure and a checker that could not write all show as a green job. The record is <code>MANIFEST-s6.json</code> (<code>outcome</code>, <code>exception</code>) and <code>CHECK-&lt;arm&gt;.json</code>, not the job colour; the PO and the researcher read those.</td>
+<td>RFC R2.5, R2.7</td>
+<td>After the run: <code>outcome</code> in the three manifests on <code>data/s6-extension</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>note</td>
+<td><code>scripts/extend_s6.py:214</code>; <code>.github/workflows/s6-extension.yml:51</code></td>
+<td>The markets and USGS manifest is written before the request (the right order), but it reaches the branch only at the push. A job cancelled or timed out between the two loses the record, and the next dispatch would send a request (the same outcome as finding 2 by another path). <code>cancel-in-progress: false</code>, the seconds those arms take, and the push retries make it unlikely.</td>
+<td>D12 (iii); RFC R2.9</td>
+<td>A cancelled or failed job in the Actions log for a month whose branch has no manifest for that arm</td>
+</tr>
+<tr>
+<td>10</td>
+<td>note</td>
+<td><code>scripts/extend_s6.py:35, 134-139</code></td>
+<td><code>--place</code> accepts <code>runner</code> only, where R2.1's usage line lists <code>runner|container|local</code>; the wrapper also refuses unless <code>GITHUB_ACTIONS=true</code>. Both follow D12 (iv) and are stated in the wrapper's docstring (<code>:12</code>) rather than in the workflow header. Sound.</td>
+<td>D12 (iv); RFC R2.1, R2.8</td>
+<td>Dry-run record, case "Place other than the runner" (exit 2, no request)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>note</td>
+<td><code>scripts/extend_s6.py:76, 153, 221</code></td>
+<td>The frozen module file is read three times (hash test, manifest hash, <code>exec_module</code>), where R2.1 step 2 says "hashed once and loaded once". On the runner nothing else writes between the reads; no practical gap, but the text and the code differ.</td>
+<td>RFC R2.1 step 2</td>
+<td>Read the three lines</td>
+</tr>
+<tr>
+<td>12</td>
+<td>note</td>
+<td><code>council/scripts/check_extension.py:54, 214</code></td>
+<td><code>order_ok</code> tests that the dates of <code>run_daily</code> are sorted, but <code>lines_by_date</code> keys rows by date, so a duplicated date row would be collapsed and "strictly increasing" (check N) could not see it. The frozen writers cannot produce one (<code>extract_usgs.py:46-49</code>, <code>extract_markets.py:33-45</code>, <code>extract_gdelt.py:118-124</code>), so no consequence today.</td>
+<td>RFC R2.5 N</td>
+<td>Read the two lines</td>
+</tr>
+<tr>
+<td>13</td>
+<td>note</td>
+<td><code>scripts/extract_usgs.py:26-29</code>; D12 USGS rule</td>
+<td>The USGS attempt is one <code>main()</code> call. From the first month of 2027 the frozen yearly split makes that one call two HTTP requests (start stays 2026-10-01 under D19 (a)). Consistent with "one attempt a month" read as one call, which is how R2.9 and the wrapper define it; the record should keep saying "attempt".</td>
+<td>D12; RFC R2.9</td>
+<td>Read the loop</td>
+</tr>
+<tr>
+<td>14</td>
+<td>note</td>
+<td><code>council/scripts/check_extension.py:103-111</code></td>
+<td>From month 2 the file-day sha256 reference for compared days comes from earlier months' <code>s6-work/*/gdelt/progress.json</code> on the data branch, so the branch must keep every month's folder; nothing prunes it, and nothing says so.</td>
+<td>RFC R2.4 (R:13)</td>
+<td>The branch's history each month</td>
+</tr>
+<tr>
+<td>15</td>
+<td>note</td>
+<td><code>council/reviews/evidence/2026-11-06-extend-s6-dryrun.md:3</code></td>
+<td>The dry run was the Chair's session's, which also wrote the code; R2.13 names "the Engineer" and R:14 "the author's". The author ran it, which is what R:14 asks. The record says so itself.</td>
+<td>RFC R2.13; R:14</td>
+<td>Line 3 of the record</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-two-declared-departures-workflow-header-lines-6-7">The two declared departures (workflow header, lines 6-7)<a class="headerlink" href="#the-two-declared-departures-workflow-header-lines-6-7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><code>oracle</code> added to the paths copied from <code>origin/main</code> (<code>:39</code>) and to the paths unstaged before the commit (<code>:49</code>): sound.</strong> The RFC's own
+  guard list (R2.1 step 1) already names <code>oracle</code>, and both the wrapper (<code>extend_s6.py:33</code>) and the checker (<code>check_extension.py:29</code>) guard it;
+  the RFC's draft checkout line (R2.11) omitted it, so once the data branch is older than <code>main</code> in <code>oracle/</code> the guard would refuse every month.
+  <code>oracle</code> is a tracked tree on <code>origin/main</code> (26 files, no <code>.gitmodules</code>), so the <code>git checkout</code> pathspec resolves and the step cannot fail on it.</li>
+<li><strong>A checker failure does not stop the commit (<code>:47</code>): sound, and needed.</strong> The checker exits non-zero only when it could not write (<code>:131-132,
+  :253-258</code>) or crashes; the draft would then have committed nothing, and the month's <code>MANIFEST-s6.json</code> would never reach the branch, so the
+  refusal of a second markets or USGS request (<code>extend_s6.py:106-113, 176-181</code>, which reads that manifest) would not hold on the next dispatch.
+  With the departure, <code>s6-work/</code> is committed whatever the checker did, and a missing CHECK file is visible as a warning and, to the researcher,
+  as the absence of the file R2.12 step 1 requires before any merge. R2.5's line for check G ("nothing is committed … but the report") is not what
+  the draft did either; the implemented behaviour is the one consistent with R2.9.</li>
+</ul>
+<p>No third departure from the RFC text was found beyond findings 1 (in effect), 3, 4 and 10 above.</p>
+<h2 id="checked-and-found-in-order">Checked and found in order<a class="headerlink" href="#checked-and-found-in-order" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Window arithmetic (D17 b, D19 a, D16 a).</strong> <code>run_date</code> from <code>datetime.now(timezone.utc).date()</code> (<code>extend_s6.py:157</code>), independent of <code>TZ</code>
+  (set to UTC anyway, workflow <code>:17</code>); <code>end = run_date − END_LAG</code> for every arm (<code>:38, :185</code>); <code>cut</code> is the date of the last row of
+  <code>data/events/&lt;arm&gt;/daily.csv</code> on <code>main</code>, read as a date only (<code>:81-83</code>), which is 2026-10-26 for the three arms at this commit; GDELT
+  <code>start = cut − GDELT_BACK</code> (<code>:37, :186</code>), 2026-10-20 for month 1, file-days through <code>end + 1</code> by the frozen code (<code>extract_gdelt.py:97-98</code>);
+  USGS from 2026-10-01 (<code>:36</code>); markets from the frozen start (<code>:230-231</code>). New rows are the dates in (<code>cut</code>, <code>end</code>] (<code>:121</code>). The checker
+  compares GDELT <code>cut − 5</code> .. <code>cut − 1</code> (<code>check_extension.py:151-152</code>), adds the cut only when <code>gdelt_cut_compared</code> is true, which in month 1
+  it is not (no <code>MANIFEST-s6-*.json</code> on <code>main</code>), so 2026-10-26 is neither compared nor counted as new (D16 a). An open GDELT month takes
+  <code>cut</code>, <code>start</code>, <code>end</code> and <code>run_date</code> from <code>RUN.json</code> (<code>:173-174</code>), so a resumed chunk keeps the month's window. "Nothing to do" when
+  <code>end &lt;= cut</code> returns before any folder is created (<code>:187-189</code>). The file-day counts in the dry-run record are consistent with its window.</li>
+<li><strong>Stop rules (D12 iii; R2.9).</strong> Markets: one <code>urlopen</code> with the frozen URL and header (<code>extract_markets.py:21-22, 28-29</code>), one <code>main()</code> call
+  (<code>extend_s6.py:237</code>), any exception recorded and never retried (<code>:238-239</code>), outcome <code>ended-by-stop-rule</code>, exit 5 (<code>:257</code>); a response without
+  <code>chart.result</code> raises inside the frozen code and takes the same path. USGS: the same path. A second dispatch in the same month: the manifest
+  written before the request (<code>:214</code>) closes the folder for those arms (<code>:106-109</code>), and the wrapper exits 5 before loading the module and
+  before any request (<code>:176-181</code>). GDELT: only the frozen four attempts per file (<code>extract_gdelt.py:52-66</code>); exit 1 or 3 resumes next chunk
+  (<code>:250-255</code>). Dry-run cases (3), (4), (4b), (5d) show these paths with no request sent.</li>
+<li><strong>Guard.</strong> Against <code>origin/main</code>, both tests (<code>extend_s6.py:58-68</code>), run before the frozen-bytes test and before any write or request
+  (<code>:141-152</code>) and again after the call (<code>:261-265</code>); the checker repeats it (<code>check_extension.py:57-61</code>). The frozen bytes of the extractor
+  and of <code>study/protocol-v0.4.json</code> are tested against the <code>analysis-v1</code> blob (<code>:71-78, :146-152</code>). Workflow: <code>git add s6-work/</code> then
+  <code>git reset -q scripts study data engine oracle council</code> (<code>:48-49</code>), so the <code>main</code> copies staged by the checkout at <code>:39</code> never enter the
+  commit; <code>s6-work/</code> is not ignored (<code>.gitignore</code> has no such entry); <code>__pycache__/</code> is ignored (<code>.gitignore:4</code>), hence
+  <code>sys.dont_write_bytecode = True</code> at <code>:217</code> before the load at <code>:219-221</code>; the checker imports the standard library only.</li>
+<li><strong>What is written, and where.</strong> The wrapper writes <code>s6-work/&lt;month&gt;/&lt;arm&gt;/{MANIFEST-s6.json, RUN.json}</code> and renames the frozen
+  <code>MANIFEST.json</code> to <code>MANIFEST.frozen.json</code> (<code>:193-214, :241-243</code>); the frozen code writes <code>daily.csv</code>, <code>events.csv</code>, <code>progress.json</code>,
+  <code>MANIFEST.json</code> into the overridden <code>OUT</code>/<code>PROG</code> only (<code>:224, :227, :230</code>; <code>extract_gdelt.py:33-34, 81, 94, 133, 141</code>;
+  <code>extract_usgs.py:44, 51, 58</code>; <code>extract_markets.py:46, 53</code>); the checker writes <code>s6-work/&lt;month&gt;/CHECK-&lt;arm&gt;.json</code> (<code>:259</code>). The workflow
+  commits <code>s6-work/</code> to <code>data/s6-extension</code> and pushes <code>HEAD:data/s6-extension</code> (<code>:50-51</code>); nothing targets <code>main</code>, <code>results/</code>, <code>data/</code>
+  or <code>scripts/</code>. The dry-run record's <code>git status</code> and written-paths lists agree with this.</li>
+<li><strong>Readers untouched.</strong> PR #3 modifies no file. The readers of <code>daily.csv</code>/<code>events.csv</code> (<code>engine/src/mundane/h3.ts:38</code>,
+  <code>scripts/phase2a_generator.py:46-48</code>, <code>scripts/phase2a_marginals.py:208-210</code>, <code>scripts/check_gdelt_goldstein.py:35</code>) are unchanged.</li>
+<li><strong>Sealed sets.</strong> Neither script reads <code>data/split/</code> or <code>study/UNSEAL-*</code> (grep). Rows of <code>data/events/</code> on <code>main</code> are read for byte
+  comparison per date, with outputs of dates, counts of dates and equal/different (R2.4, R2.5 allow this: GDELT five days, USGS
+  2026-10-01 to the cut, markets every pinned row). Values copied out of a row: the GDELT <code>incomplete</code> flag (<code>check_extension.py:233</code>,
+  allowed by R2.6), file-day counts, and the USGS ids of finding 4. Check C for markets compares the cut day's close and writes
+  equal/different only (<code>:203-206</code>). The check file's keys come from a fixed list (<code>:31-41, :114-122</code>) and its text is tested against the
+  same pattern as <code>scripts/check-contract.sh:6</code> (<code>:30, :256-258</code>): identical regex.</li>
+<li><strong>Pin.</strong> <code>git diff --stat analysis-v1 HEAD -- engine scripts data/split data/events study oracle</code> lists only <code>scripts/extend_s6.py</code>
+  (added under D12) and <code>study/UNSEAL-validation</code> (outside the pin, <code>council/PIN.md:3-10</code>). The three extractors and the protocol JSON are
+  byte-identical to <code>analysis-v1</code> (<code>git diff</code> empty).</li>
+<li><strong>Checker against R2.5.</strong> P (byte prefix of <code>daily.csv</code> and <code>usgs/events.csv</code>, byte-identical <code>MANIFEST.json</code> for the three arms and
+  <code>gdelt/progress.json</code>, <code>:64-77</code>); O per arm with the GDELT file-day sha256 for the compared day and the next (<code>:156-166</code>); C for USGS and
+  markets (<code>:194-206</code>); N (<code>:210-224</code>: after the cut, none after <code>end</code>, every calendar day for GDELT and USGS, no weekend row and the weekdays
+  without a row listed for markets); E for GDELT reporting only (<code>:226-239</code>), with the count of file-days having errors next to S1's; merge rule
+  G, P, N block, O blocks GDELT only (<code>:168-170, :243-246</code>); an outcome other than <code>done</code> runs no check (<code>:247-248</code>).</li>
+<li><strong>Manifests against R2.7.</strong> All listed fields present (<code>extend_s6.py:194-201, :245-259</code>), plus <code>decisions</code>.</li>
+<li><strong>Dry-run record against R2.13.</strong> Cases (1) per arm, (2) twice, (3), (4) with (4b), (5) with (5a)–(5d) are all there with exit codes and
+  "no request" marked; <code>git status</code> before and after; the written paths; the 7 sha256 values all equal to the files at <code>13b9bae</code> (checked with
+  <code>sha256sum</code>). No number from <code>results/</code> or from the sealed sets appears in it: its figures are synthetic request counts and counts of dates.</li>
+<li><strong>Workflow file.</strong> Parses (5 steps, 3 arms, 3 inputs); <code>workflow_dispatch</code> only; <code>permissions: contents: write</code>; <code>concurrency</code> without
+  cancel; <code>fetch-depth: 0</code> so <code>origin/main</code> and the tag are available to the guard and the frozen-bytes test.</li>
+</ul>
+<h2 id="what-i-could-not-check">What I could not check<a class="headerlink" href="#what-i-could-not-check" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>The runner itself</strong>: that <code>origin/main</code> and <code>refs/tags/analysis-v1</code> are present after <code>actions/checkout@v4</code> as assumed, that <code>GITHUB_TOKEN</code>
+  may push to <code>data/s6-extension</code> (branch protection), and the real network from GitHub's hosts. The E6 workflow pushed with the same pattern
+  (<code>program/STATE.json</code>), which is the only evidence.</li>
+<li><strong>The dry run</strong>: I checked its record, not its execution (R2.13). The stub reproduces the fields the frozen code reads, not the services'
+  real payloads (record, "Not checked here").</li>
+<li><strong>The Actions quota.</strong> The RFC ("Cost and risk"; R2.8, "needs from the PO") has the PO confirm it before the first dispatch, spending being
+  class B. No confirmation is on record in <code>council/FOR-THE-PO.md</code> (grep "quota" empty).</li>
+<li><strong>Night item 13</strong> (the verification of RFC revision 2 against the review's conditions 1–6 and audit decision 2) is still open
+  (<code>council/NIGHT-QUEUE.md</code> row 13: "was not worked; it stays first"). This review is item 16 and does not replace it; the D12 row says its
+  findings reach the PO before the first dispatch, "recommended, not a gate".</li>
+<li>The behaviour of the workflow when the dispatched ref is not <code>main</code>: the wrapper, the checker and the frozen code are always <code>origin/main</code>'s
+  (<code>:39</code>), but the workflow file itself is the dispatched ref's. The first dispatch is the PO's, from <code>main</code>.</li>
+</ul>
+<h2 id="verdict">Verdict<a class="headerlink" href="#verdict" title="Permanent link">&para;</a></h2>
+<p><strong>Ready for the first dispatch, on these conditions.</strong></p>
+<ol>
+<li>The first dispatch (<code>arms: all</code>, the PO's, D12) is made early enough in the UTC day that the GDELT job ends before 00:00 UTC, so that the
+   three manifests carry the same <code>run_date_utc</code> and <code>end</code> (finding 1); the Engineer removes the dependence on the hour of dispatch before the
+   December dispatch.</li>
+<li>No second dispatch with <code>arms: all</code> in the same month, and none in a later month, until the Engineer has separated "branch absent" from
+   "fetch failed" at <code>s6-extension.yml:37-38</code> (finding 2); a GDELT-only continuation (<code>arms: gdelt</code>) is not affected by the stop rule.</li>
+<li>The PO's confirmation of the Actions quota is written into <code>council/FOR-THE-PO.md</code> (RFC "Cost and risk"; spending is class B), one line.</li>
+<li>After the run and before any merge: the researcher confirms month 1 is merged before month 2 is dispatched (finding 3), and reads the three
+   <code>MANIFEST-s6.json</code> and <code>CHECK-&lt;arm&gt;.json</code> rather than the job status (finding 8).</li>
+</ol>
+<p>Findings 3–7 are for the Engineer before the second month; none of them changes a row, a request or the pin. Item 13 remains open and is not a
+condition of this review.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.indexes", "navigation.top", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>

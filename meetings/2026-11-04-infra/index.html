@@ -1,0 +1,1132 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A pre-registered study that tests, with rules fixed in advance, whether the positions of the planets say anything about events on Earth. Built so that it can fail.">
+      
+      
+      
+        <link rel="canonical" href="https://sisco128.github.io/cielo-eventi-site/meetings/2026-11-04-infra/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>2026-11-04 06:08 UTC — standup + infra - Cielo-Eventi</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2026-11-04-0608-utc-standup-infra" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cielo-Eventi" class="md-header__button md-logo" aria-label="Cielo-Eventi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cielo-Eventi
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2026-11-04 06:08 UTC — standup + infra
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cielo-Eventi" class="md-nav__button md-logo" aria-label="Cielo-Eventi" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cielo-Eventi
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meetings
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Meetings
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../journal/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Journal
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Journal
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../reports/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reports
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reports
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../documents/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documents
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agenda
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discussion
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Discussion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sessions-since-the-last-meeting-and-their-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Sessions since the last meeting and their outcomes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. The block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-infrastructure-and-scouting-wednesday-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Infrastructure and scouting (Wednesday theme)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-due-action-items-from-the-last-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Due action items from the last minutes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-councilfor-the-pomd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. council/FOR-THE-PO.md
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Decisions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action items
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-the-po" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For the PO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#not-resolved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Not resolved
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2026-11-04-0608-utc-standup-infra">2026-11-04 06:08 UTC — standup + infra<a class="headerlink" href="#2026-11-04-0608-utc-standup-infra" title="Permanent link">&para;</a></h1>
+<p><strong>Attendees (roles):</strong> Chair, Researcher, Engineer (Round 1); Critic, Integrity Officer (Round 2); Secretary (minutes).
+<strong>Mode:</strong> synchronous (Agent subagents) · <strong>Budget mode:</strong> normal
+<strong>Time box:</strong> 40 min planned (stand-up + Wednesday infra, combined), about 10 min used (start 06:08 UTC; decisions committed 06:16 UTC; minutes checked and committed by the Chair at 06:18 UTC).
+<strong>Sessions since last meeting:</strong> 1 research session (2026-11-04 02:38 UTC) and 0 night work sessions (the night of 2026-11-03 was the huddle, which is the last meeting itself), from <code>journal/INDEX.md</code> and <code>council/nights/INDEX.md</code>.</p>
+<h2 id="agenda">Agenda<a class="headerlink" href="#agenda" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Sessions since the last meeting and their outcomes.</li>
+<li>The block (<code>STATE.blocked</code>, since 2026-11-02, owner engineer).</li>
+<li>Infrastructure and scouting (Wednesday theme): health, weekly scan, RFC status.</li>
+<li>Due action items from the last minutes.</li>
+<li><code>council/FOR-THE-PO.md</code>: open items answered since 2026-11-03 06:08 UTC.</li>
+</ol>
+<p>Round 1: Researcher, Engineer (anonymised as Contribution 2 and Contribution 1 in <code>round1-anon.md</code>). The Critic was not in Round 1 (no change under <code>results/</code> since the last meeting, per the agenda). Round 2: Critic, Integrity Officer. Freeze check at open: <code>scripts/verify_freeze.sh</code> ok.</p>
+<h2 id="discussion">Discussion<a class="headerlink" href="#discussion" title="Permanent link">&para;</a></h2>
+<h3 id="1-sessions-since-the-last-meeting-and-their-outcomes">1. Sessions since the last meeting and their outcomes<a class="headerlink" href="#1-sessions-since-the-last-meeting-and-their-outcomes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Researcher:</strong> One research session since the last meeting, 2026-11-04 02:38 UTC (S6, blocked). It refreshed <code>blocked.reason</code> and <code>blocked.needs</code>, made no network probe and extracted nothing (commit 1e3f17a, <code>journal/2026-11-04-0238.md</code>). <code>STATE.next</code> stays S6 and <code>s6_cursor.last_extension</code> is null. The only changes in 1e3f17a to <code>program/STATE.json</code> are <code>blocked.reason</code>, <code>blocked.needs</code> and <code>last_session</code>. No file under <code>results/</code> changed since the last meeting; no number was produced. The researcher recorded that the journal gives "~6 min (02:38 to ~02:44)" while the commit is stamped 02:39:04 UTC.</li>
+<li><strong>Engineer:</strong> No separate contribution to this item; its Round 1 section 1 covers the block (item 2). It treated the night of 2026-11-03 as the huddle.</li>
+<li><strong>Critic (Round 2):</strong> Confirmed the files touched by 1e3f17a and that the commit touches no <code>network</code> lines. Noted the duration discrepancy (finding 11) as a recording slip that cannot be settled from the repository.</li>
+<li><strong>Integrity Officer (Round 2):</strong> Check 4: no change under <code>results/</code> since the last meeting, nothing to match. Check 5: no run governed by a decision in this period. Check 8: 1 research session within <code>normal</code>, 0 night sessions, 1 council meeting (this one); the duration of the research session rests on the journal (note 4).</li>
+</ul>
+<h3 id="2-the-block">2. The block<a class="headerlink" href="#2-the-block" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Researcher:</strong> The block is since 2026-11-02, owner engineer, unchanged. The refreshed text matches huddle decisions 1, 2 and 4. Two minor mismatches were raised: decision 1's chain ends with "the first extension", which <code>needs</code> does not name; and <code>reason</code> says "the council recommends accepting the method only through revision 2", which the researcher read as stronger than the huddle's "a record or a proposal". The researcher asked for a ruling on whether <code>blocked.reason</code> should keep "the council recommends" (§ 5, item 2), and for an owner and date to probe four carried-over hosts (§ 5, item 3).</li>
+<li><strong>Engineer:</strong> The block is unchanged in substance (<code>since</code> and <code>owner</code> unchanged; <code>reason</code> and <code>needs</code> refreshed as huddle decision 4 asked). The refreshed text is consistent with huddle decisions 1 and 2. The critical path is unchanged: night item 12 (RFC revision 2), then item 13 (Critic verification), then the PO decides D12 with D16–D19, then the PO adds the wrapper and workflow. The Engineer read <code>council-night.prompt.md</code> step 5 as not met for tonight (a <code>*-huddle</code> folder dated 2026-11-03 exists after <code>blocked.since</code>), so step 5 is skipped and the night works the queue: item 12 first, then item 11 if the box allows, at most two. D15 stays open and is not needed for tonight.</li>
+<li><strong>Critic (Round 2):</strong> Answer 1: yes, the step 5 reading holds if the routine stored on the platform matches the file (not checkable here). Answer 2: mostly no; the <code>reason</code>/<code>needs</code> wording restates D12's recommended answer, which audit decision 7 made final. Finding 4 (major-level wording point, minor): "declaring one place of execution for all three arms" in <code>needs</code> is stated as the PO's need, while D12 (iv) requires a place declared on its own merits and the runner for all three arms is a recommendation; "Path B" is the huddle's label. Finding 5: the researcher's second mismatch is not supported by the record. Finding 9: a status script must not print a verdict on step 5, since that would settle D15 (class B).</li>
+<li><strong>Integrity Officer (Round 2):</strong> The step 5 reading is an analysis, not an instruction; no line about step 5 may be written into <code>council/NIGHT-QUEUE.md</code>. Note 3: two Round 1 proposals touch class B and are recorded as such in decisions 7 and 8 (a research-prompt line; dispatching an ephemeris-fetch workflow).</li>
+<li><strong>Chair (decisions 2 and 3):</strong> Huddle decision 3 is closed. The block is unchanged, and no line about step 5 goes into <code>council/NIGHT-QUEUE.md</code>. The <code>blocked</code> wording is recorded for the researcher, who owns <code>program/STATE.json</code>; no change is needed to the "council recommends" wording, and the "one place of execution" phrase is recorded for the researcher as going beyond D12 (iv) as decided.</li>
+</ul>
+<h3 id="3-infrastructure-and-scouting-wednesday-theme">3. Infrastructure and scouting (Wednesday theme)<a class="headerlink" href="#3-infrastructure-and-scouting-wednesday-theme" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Engineer, health (Round 1 § 2):</strong> GitHub Actions run state not checkable from this session (no API); the last recorded runs are the E6 runs (<code>final_run</code> 41225487118, merged to main 2026-10-31); nothing recorded as stuck. <code>engine/</code> last commit 10ba926 (2026-10-31); <code>git diff</code> against <code>analysis-v1</code> not rerun by the Engineer (night of 2026-11-03 recorded it empty). Last green mundane test record 78/78 on 2026-10-31 and 78/78 on 2026-11-01; not run today. Mundane ephemerides are not present in the container; the first <code>pnpm ephem:fetch</code> under the Limited allowlist is untested (FOR-THE-PO "Coming up"). <code>STATE.network</code>: <code>checked_at</code> 2026-11-03T02:37Z, not re-probed, about 28 hours old at this meeting; four <code>ok</code> hosts carried over and not probed. Disk figures are the session allowance and not reliable. The three workflows were read: <code>council-huddle.yml</code> (the Engineer could not see whether its secrets exist); <code>gdelt-goldstein.yml</code> (<code>workflow_dispatch</code> only, the template of a future <code>s6-extension.yml</code>, which does not exist); <code>site.yml</code> (before the next dispatch it needs an Integrity reading and night item 14).</li>
+<li><strong>Engineer, weekly scan (Round 1 § 3):</strong> Two HEAD requests: GDELT <code>lastupdate.txt</code> HTTP 200 and USGS <code>version</code> HTTP 200; no body read, Yahoo not contacted, <code>STATE.network</code> not written. Release notes, Swiss Ephemeris and dependencies not read. Three ideas from local docs, no RFC written today: (1) an ephemeris reachability check before S7 (a <code>workflow_dispatch</code> job plus one line in the research session); (2) a read-only status script under <code>council/scripts/</code>; (3) marking <code>STATE.network</code> entries (a pointer to the researcher, not an RFC).</li>
+<li><strong>Engineer, RFC status (Round 1 § 4):</strong> <code>council/rfcs/2026-11-01-monthly-extension-runner.md</code>: draft plus addendum of 2026-11-02; revision 2 pending, night item 12, not blocked. Item 8 open, no progress. Item 14 open, due before the next <code>site</code> dispatch; the Engineer noted that item 14 cannot start before 2026-11-06 unless the queue order changes.</li>
+<li><strong>Researcher:</strong> Round 1 contained no separate contribution to this item beyond the RFC status in § 5; the researcher's open requests are recorded under items 2 and 4.</li>
+<li><strong>Critic (Round 2):</strong> Finding 2: idea 1 is class A only for its workflow part; its research-session line changes a routine and is class B. Finding 3: a GitHub runner has open internet, so a green runner job does not test the Limited allowlist. Finding 1 bears on the "Coming up" line (item 4). Finding 9: idea 2 stays class A only if it prints dates and the routine's wording with no verdict. Finding 6: <code>council-huddle.yml</code> secrets are recorded as set on 2026-11-02 21:43 UTC (<code>council/FOR-THE-PO.md</code>, D3 (rest)); the workflow's header comment (lines 3–4) is stale.</li>
+<li><strong>Integrity Officer (Round 2):</strong> Idea 1: the RFC is class A; a workflow draft is class A only if <code>workflow_dispatch</code>-only, not pinned, and writes nothing to the repository; dispatching it is class B (the PO's); the research-session line is class B (a routine). Idea 2: class A with conditions (read-only; no network request; writes no file, not <code>program/STATE.json</code>; nothing from <code>results/phase4/</code> beyond equal/different; not under <code>scripts/</code>; needs a night-queue item first). Check 6: no secret, e-mail or routine ID in the changed files. Check 7: no public text in this meeting; none of the new files claims an effect or carries a p-value.</li>
+<li><strong>Chair (decisions 6–10):</strong> Record of infrastructure health (decision 6, done). Idea 2 entered as night item 15, RFC only, last in the queue (decision 7). Idea 1 not queued as its own item; its question goes into the scope of night item 8 (decision 8). Queue order set to 12, 11, 13, 14, 2, 3, 4, 6, 7, 8, 9, 15 (decision 9). Release notes, Swiss Ephemeris and dependencies recorded as not read this week (decision 10).</li>
+</ul>
+<h3 id="4-due-action-items-from-the-last-minutes">4. Due action items from the last minutes<a class="headerlink" href="#4-due-action-items-from-the-last-minutes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Researcher:</strong> Huddle decision 4 (refresh <code>blocked</code>) is done (commit 1e3f17a). Audit 2026-11-03 decision 15 (<code>STATE.network.ok</code> entries probed or marked) is not yet due: the 02:38 session did not write <code>STATE.network</code>. The researcher's request for an owner and a date to probe the four carried-over hosts is declined (Chair, decision 5).</li>
+<li><strong>Engineer:</strong> Round 1 did not contain a separate contribution on this item; the Engineer's proposal to add a "Coming up" line for huddle decision 5 is recorded under the Chair's decision 4.</li>
+<li><strong>Critic (Round 2):</strong> Finding 7: audit decision 15 is a record for the researcher, not an instruction; not yet due. Finding 1: the proposed "Coming up" line contains two errors: "few or no prospective rows" is wrong on the record (S7 uses the historical 20 % and all days from 2026-10-01, and days up to 2026-10-26 are pinned), and "what S7 does then is the PO's" gives discretion over a confirmatory step. Finding 8: the stop rule is D12 (iii), not (iv). Answer 4: the wording should say only that the stop rule can leave markets with fewer days after 2026-10-26, and that S7 runs as frozen on the rows that exist.</li>
+<li><strong>Integrity Officer (Round 2):</strong> The "Coming up" line is class A with conditions: one line, a statement and not a question until a real refusal; no prediction, no remedy, no number, no place or PO choice about S7.</li>
+<li><strong>Chair (decisions 4 and 5):</strong> Huddle decision 5 is amended. The "Coming up" line is added to <code>council/FOR-THE-PO.md</code> with the Critic's wording, not the proposed one (decision 4, done). Audit decision 15 stays a record for the researcher (decision 5).</li>
+<li><strong>Night item 11:</strong> due tonight (agenda item 4; audit 2026-11-03 decision 6 keeps its due date, night 2026-11-04). Not worked in this meeting; its owner is the Critic (<code>council/NIGHT-QUEUE.md</code>, item 11; Chair's correction at close).</li>
+</ul>
+<h3 id="5-councilfor-the-pomd">5. <code>council/FOR-THE-PO.md</code><a class="headerlink" href="#5-councilfor-the-pomd" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Chair (decision 11):</strong> No open item (D12–D19) was answered in the file since 2026-11-03 06:08 UTC (<code>git log 538c585..HEAD -- council/FOR-THE-PO.md</code> empty before this meeting). No new class B item today. D14 (usage reading) is due 2026-11-06; no reading exists after 2026-11-01T10:15Z.</li>
+<li><strong>Integrity Officer (Round 2, check 8):</strong> D14 is open and is the PO's; no later reading was found, and none was invented.</li>
+<li><strong>Chair (decision 4):</strong> The "Coming up" line on markets under the stop rule is present in <code>council/FOR-THE-PO.md</code> (line 27, linked to this meeting's decision 4).</li>
+</ul>
+<h2 id="decisions">Decisions<a class="headerlink" href="#decisions" title="Permanent link">&para;</a></h2>
+<p>Decision table copied from <code>council/meetings/2026-11-04-infra/decisions.md</code>:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Decision</th>
+<th>Class</th>
+<th>Reason</th>
+<th>Owner</th>
+<th>Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Record: since the last meeting, one night (2026-11-03, second huddle, 22:08 UTC, commit 524a806) and one research session (2026-11-04 02:38 UTC, S6 blocked, <code>blocked.reason</code>/<code>needs</code> refreshed, no probe, nothing extracted, commit 1e3f17a). Huddle 2026-11-03 decision 4 is <strong>done</strong>. No change under <code>results/</code>. The journal's "~6 min (02:38 to ~02:44)" and the commit time 02:39:04 UTC do not agree; the repository cannot settle it (recording slip, not a deviation)</td>
+<td>A (record)</td>
+<td>Researcher §§ 1–2; Critic R2 note 11; Integrity checks 4, 8</td>
+<td>Secretary</td>
+<td>done</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The block is unchanged: since 2026-11-02, owner engineer. Critical path: night item 12 (revision 2, tonight) → item 13 (Critic verification) → the PO decides D12 with D16–D19 together → the PO adds the wrapper and workflow → first extension. Huddle 2026-11-03 decision 3 is closed. The Engineer's and the Critic's reading of <code>council-night.prompt.md</code> step 5 for tonight (not met; the queue is worked) is recorded in these minutes only; <strong>no</strong> line about step 5 goes into <code>council/NIGHT-QUEUE.md</code> (it would settle D15, class B)</td>
+<td>A (record)</td>
+<td>Engineer § 1; Critic R2 answer 1; Integrity note on audit decision 13</td>
+<td>Chair</td>
+<td>standing</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>STATE.blocked</code> wording, record for the researcher (the council does not write <code>program/STATE.json</code>): "the council recommends accepting the method only through revision 2 …" is supported by audit 2026-11-03 decision 7, so the researcher's request for a ruling is answered: no change needed. The phrase in <code>needs</code> "declaring <strong>one place of execution for all three arms</strong>" goes beyond D12 (iv) as decided, which requires a place declared on its own merits before any attempt, with the runner for all three arms as the council's <strong>recommendation</strong>; "Path B" is the huddle's label</td>
+<td>A (record)</td>
+<td>Critic R2 findings 4–5; Researcher § 5.2</td>
+<td>Researcher</td>
+<td>when it next writes <code>blocked</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Huddle 2026-11-03 decision 5, <strong>amended</strong>: the "Coming up" line goes into <code>council/FOR-THE-PO.md</code> with the Critic's wording, not the proposed one. It says only that, once D12 is accepted, a month whose markets attempt is refused adds no markets rows after 2026-10-26 for that month; the rows up to 2026-10-26 are pinned; S7 runs as frozen on the rows that exist; no question now. It names no place, no HTTP code, no number, no remedy and no PO choice about S7</td>
+<td>A</td>
+<td>Critic R2 finding 1 (S7 uses the historical 20 % and all days from 2026-10-01; the council has no power over what S7 estimates); Integrity: class A with conditions</td>
+<td>Chair (done)</td>
+<td>done</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Audit 2026-11-03 decision 15 is <strong>not yet due</strong>: the 02:38 session did not write <code>STATE.network</code>. It stays a record for the researcher, due when it next writes that field. The researcher's request for an owner and a date to probe the four carried-over hosts is <strong>declined</strong>: it would turn a record into an instruction and schedule network requests nobody asked for</td>
+<td>A (record)</td>
+<td>Critic R2 finding 7; audit decision 15 text</td>
+<td>Researcher</td>
+<td>when it next writes <code>STATE.network</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Infrastructure health, record: <code>engine/</code> last commit 10ba926 (2026-10-31); last green mundane tests 78/78 (2026-11-01, <code>journal/INDEX.md</code>); tests not run today; mundane ephemerides absent from the container by design; Actions run history not checkable from this session; the Engineer's two HEAD requests (GDELT <code>lastupdate.txt</code>, USGS <code>version</code>) returned 200 and were not written into <code>STATE.network</code>; no Yahoo host contacted by any role; <code>df</code> figures are the session allowance, not reliable. <code>council-huddle.yml</code>: the record (D3 rest, <code>council/FOR-THE-PO.md</code>) says both secrets were set by the PO on 2026-11-02 21:43 UTC and the workflow is live; the Engineer's "cannot see whether they exist" is corrected; the workflow's header comment (lines 3–4, "inert until … exist") is stale</td>
+<td>A (record)</td>
+<td>Engineer § 2; Critic R2 finding 6, answer 6; Integrity checks 1–3, 6 and Round 1 section</td>
+<td>Secretary</td>
+<td>done</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Weekly scan, idea 2 (read-only status script under <code>council/scripts/</code>): <strong>new night item 15 (engineer), RFC only</strong>, last in the queue, for the Monday agenda once written. Conditions written into the item: read-only; no network request; writes no file (never <code>STATE.json</code>); nothing from <code>results/phase4/</code> beyond "equal"/"different"; not under <code>scripts/</code>; it prints <code>blocked.since</code>, the huddle-folder dates and the routine's step-5 wording, <strong>never a verdict</strong> on step 5</td>
+<td>A</td>
+<td>Engineer § 3; Integrity conditions; Critic R2 finding 9 (a verdict would settle D15)</td>
+<td>Chair (queue edit, done); Engineer (night)</td>
+<td>after item 9</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Weekly scan, idea 1 (ephemeris-fetch check): <strong>not queued as its own item</strong>. A runner check cannot test the Limited allowlist (a runner has open internet), and the "one line in the research session" is a routine change, class B. The question goes into the scope of night item 8 (S7 gate RFC, which already covers research-prompt changes before S7): the RFC states how and when the first <code>pnpm ephem:fetch</code> under the Limited allowlist is tested, for the PO to apply. The "Coming up" bullet on <code>ephem:fetch</code> stays as written</td>
+<td>A (queue scope); the change itself B (PO, via item 8)</td>
+<td>Critic R2 findings 2–3; Integrity on the research-session line</td>
+<td>Chair (queue edit, done); Engineer (night item 8)</td>
+<td>before April 2027</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Queue order: <strong>12, 11, 13, 14, 2, 3, 4, 6, 7, 8, 9, 15</strong> (item 14 moves ahead of item 2). Item 14 is a precondition of the PO's next <code>site</code> dispatch; item 2 keeps its fallback (the Tuesday audit of 2026-11-10 takes it if not done by night by then). Night item 14's scope gains the stale header comment of <code>.github/workflows/council-huddle.yml</code> lines 3–4 (comment only, no behaviour change)</td>
+<td>A</td>
+<td>Engineer § 4 (item 14 could not start before 2026-11-06); audit decision 6 fallback for item 2; Critic R2 finding 6</td>
+<td>Chair (queue edit, done)</td>
+<td>standing</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Weekly scan, record of what is missing: release notes, Swiss Ephemeris and the engine's dependencies were <strong>not read</strong> this week (local docs only, Engineer § 3). No RFC file was written today</td>
+<td>A (record)</td>
+<td>Engineer § 3</td>
+<td>Engineer</td>
+<td>next Wednesday</td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>council/FOR-THE-PO.md</code>: no open item (D12–D19) was answered in the file since 2026-11-03 06:08 UTC (<code>git log 538c585..HEAD -- council/FOR-THE-PO.md</code> empty before this meeting). D14 (usage reading) is due 2026-11-06; no reading exists after 2026-11-01T10:15Z. No new class B item today</td>
+<td>A (record)</td>
+<td>Agenda item 5; Integrity check 8</td>
+<td>Chair</td>
+<td>done</td>
+</tr>
+</tbody>
+</table>
+<p>Class counts: <strong>A 11</strong> · <strong>B 0</strong> · <strong>C 0</strong>.</p>
+<h2 id="action-items">Action items<a class="headerlink" href="#action-items" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Owner</th>
+<th>Action</th>
+<th>Due</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Night item 12: revision 2 of <code>council/rfcs/2026-11-01-monthly-extension-runner.md</code> (audit 2026-11-03 decision 3)</td>
+<td>first night the queue is worked (2026-11-04 per Round 1 § 1)</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Critic</td>
+<td>Night item 13: verify revision 2 against the review's conditions 1–6 (audit decision 4)</td>
+<td>after item 12 (Round 1 § 1: 2026-11-05)</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Night item 14: <code>site/build.sh</code> applies the <code>PUBLISH.json</code> gate to <code>council/reviews/20*.md</code> (audit decision 5; scope adds header comment, today's decision 9)</td>
+<td>before the next <code>site</code> dispatch; queue order per today's decision 9</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Night item 6 scope: <code>site/content/index.md</code> and <code>site/content/team.md</code> stale sentences (audit decision 5)</td>
+<td>per queue order</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Researcher</td>
+<td>Record which <code>STATE.network.ok</code> entries were probed or carried over (audit 2026-11-03 decision 15)</td>
+<td>when it next writes <code>STATE.network</code></td>
+<td>open</td>
+</tr>
+<tr>
+<td>Researcher</td>
+<td>Record for today's decision 3: <code>blocked.reason</code>/<code>needs</code> wording ("one place of execution for all three arms" goes beyond D12 (iv) as decided)</td>
+<td>when it next writes <code>blocked</code></td>
+<td>open</td>
+</tr>
+<tr>
+<td>Researcher</td>
+<td>Record for today's decision 5: audit decision 15 not yet due; probe request declined (same record as the audit row above)</td>
+<td>when it next writes <code>STATE.network</code></td>
+<td>open</td>
+</tr>
+<tr>
+<td>PO</td>
+<td>D12: accept revision 2 after D16–D19 are decided together, with the markets stop rule and the place of execution declared</td>
+<td>before any extraction run</td>
+<td>open</td>
+</tr>
+<tr>
+<td>PO</td>
+<td>D14: append a usage reading to <code>council/BUDGET.json</code>; keep mode <code>normal</code></td>
+<td>2026-11-06</td>
+<td>open</td>
+</tr>
+<tr>
+<td>PO</td>
+<td>D15: the routine's huddle rule ("dated on or after <code>blocked.since</code>")</td>
+<td>none stated in the file; time-sensitive per the Engineer's proposal 4 (audit minutes)</td>
+<td>open</td>
+</tr>
+<tr>
+<td>PO</td>
+<td>D16: keep GDELT row 2026-10-26 pinned, or let S6 replace it (B-1)</td>
+<td>before any extraction run</td>
+<td>open</td>
+</tr>
+<tr>
+<td>PO</td>
+<td>D17: end date rule, run date − 2 days, UTC (B-2)</td>
+<td>before any extraction run</td>
+<td>open</td>
+</tr>
+<tr>
+<td>PO</td>
+<td>D18: overlap criterion and USGS events across the cut (B-3)</td>
+<td>before any extraction run</td>
+<td>open</td>
+</tr>
+<tr>
+<td>PO</td>
+<td>D19: vintage of prospective rows and the plan/pin conflict (B-4)</td>
+<td>before any extraction run</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Chair</td>
+<td>Post-S5 audit, part 2 (queue item 2): carry to the Tuesday audit of 2026-11-10 if not done by then (audit decision 6)</td>
+<td>2026-11-10</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Critic</td>
+<td>Night item 11 (agenda item 4; audit decision 6 keeps its due date)</td>
+<td>night 2026-11-04</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Night item 15 (new): read-only status script under <code>council/scripts/</code>, RFC only, with the conditions of decision 7</td>
+<td>after item 9 in queue order (decision 9)</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Night item 8 scope (new): RFC states how and when the first <code>pnpm ephem:fetch</code> under the Limited allowlist is tested, for the PO to apply (decision 8)</td>
+<td>before April 2027</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Engineer</td>
+<td>Weekly scan: read release notes, Swiss Ephemeris and engine dependencies, not read this week (decision 10)</td>
+<td>next Wednesday</td>
+<td>open</td>
+</tr>
+<tr>
+<td>Chair</td>
+<td>Huddle 2026-11-03 decision 3: queue order, item 12 first (closed by today's decision 2)</td>
+<td>this stand-up</td>
+<td>closed 2026-11-04</td>
+</tr>
+<tr>
+<td>Researcher</td>
+<td>Huddle 2026-11-03 decision 4: refresh <code>blocked.reason</code>/<code>needs</code> (done, commit 1e3f17a)</td>
+<td>this stand-up</td>
+<td>closed 2026-11-04</td>
+</tr>
+<tr>
+<td>Chair</td>
+<td>Huddle 2026-11-03 decision 5: "Coming up" line on markets under the stop rule (done, today's decision 4; <code>council/FOR-THE-PO.md</code> line 27)</td>
+<td>this stand-up</td>
+<td>closed 2026-11-04</td>
+</tr>
+</tbody>
+</table>
+<h2 id="for-the-po">For the PO<a class="headerlink" href="#for-the-po" title="Permanent link">&para;</a></h2>
+<ul>
+<li>none. No class B item in this meeting. The "Coming up" line of decision 4 is already in <code>council/FOR-THE-PO.md</code> (line 27, verified by the Secretary).</li>
+</ul>
+<h2 id="not-resolved">Not resolved<a class="headerlink" href="#not-resolved" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Whether the routines stored on the platform match <code>program/routines/*.prompt.md</code> (Critic Round 2, Integrity Officer; not checkable from the repository).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.indexes", "navigation.top", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
