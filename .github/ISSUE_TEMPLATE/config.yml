@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: The site
+    url: https://sisco128.github.io/cielo-eventi-site/
+    about: What the study is, where it stands, the journal and the minutes.
+  - name: How to contribute
+    url: https://sisco128.github.io/cielo-eventi-site/contribute/
+    about: What you can do, what nobody can do, and how answers come.

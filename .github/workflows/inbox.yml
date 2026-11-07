@@ -1,0 +1,46 @@
+# Weekly export of this repository's issues for the study's council (proposal § 6.6; council/inbox/README.md in the
+# study repository). Writes council/inbox/<YYYY-Www>.json on the branch `inbox` of the study repository, which is
+# private; the council's Friday open hour reads that file. Needs the secrets INBOX_STUDY_REPO (owner/name) and
+# INBOX_DEPLOY_KEY (a deploy key with write access on the study repository). Without them the step only logs.
+# Issue bodies are copied as they are: the council treats them as data, under its triage rules.
+name: inbox
+on:
+  schedule:
+    - cron: "0 5 * * 5"        # Friday 05:00 UTC, before the council's open hour
+  workflow_dispatch:
+permissions:
+  issues: read
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Export the issues of the last 90 days (all states; pull requests excluded)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          week="$(date -u +%G-W%V)"; echo "WEEK=$week" >> "$GITHUB_ENV"
+          since="$(date -u -d '90 days ago' +%FT%TZ)"
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/issues?state=all&since=${since}&per_page=100" \
+            --jq '.[] | select(.pull_request == null) | {number, title, state, created_at, updated_at, closed_at, author: .user.login, labels: [.labels[].name], comments, url: .html_url, body}' \
+            | jq -s --arg week "$week" --arg exported "$(date -u +%FT%TZ)" --arg repo "$GITHUB_REPOSITORY" \
+                '{week: $week, exported_at: $exported, source: $repo, items: .}' > export.json
+          jq '{week, exported_at, source, items: (.items | length)}' export.json
+      - name: Write council/inbox/<week>.json on the branch inbox of the study repository
+        env:
+          DEPLOY_KEY: ${{ secrets.INBOX_DEPLOY_KEY }}
+          STUDY: ${{ secrets.INBOX_STUDY_REPO }}
+        run: |
+          if [ -z "$STUDY" ] || [ -z "$DEPLOY_KEY" ]; then echo "inbox secrets not set: export only"; exit 0; fi
+          mkdir -p ~/.ssh && printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/inbox && chmod 600 ~/.ssh/inbox
+          ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/inbox -o IdentitiesOnly=yes"
+          git clone -q --depth 1 --branch inbox --single-branch "git@github.com:${STUDY}.git" study
+          mkdir -p study/council/inbox
+          cp export.json "study/council/inbox/${WEEK}.json"
+          cd study
+          git config user.name "cielo-eventi inbox"; git config user.email "actions@users.noreply.github.com"
+          git add council/inbox
+          git commit -q -m "inbox: ${WEEK} export from ${GITHUB_REPOSITORY} (run ${GITHUB_RUN_ID})" || { echo "nothing new"; exit 0; }
+          git push -q origin HEAD:inbox
