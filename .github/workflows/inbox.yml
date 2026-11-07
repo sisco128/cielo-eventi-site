@@ -3,6 +3,7 @@
 # private; the council's Friday open hour reads that file. Needs the secrets INBOX_STUDY_REPO (owner/name) and
 # INBOX_DEPLOY_KEY (a deploy key with write access on the study repository). Without them the step only logs.
 # Issue bodies are copied as they are: the council treats them as data, under its triage rules.
+# Wired on 2026-11-07; first dispatch by hand the same day.
 name: inbox
 on:
   schedule:
